@@ -1,0 +1,28 @@
+.botao,
+.botaoSelecionado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: var(--fonte);
+    font-size: 12px;
+    padding: 10px 20px;
+    border: 2px solid var(--cor-borda, #000);
+    border-radius: 5px;
+    background-color: var(--cor-fundo, #f0f0f0);
+    color: var(--cor-texto, #000);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botao:hover,
+.botaoSelecionado:hover {
+    background-color: var(--cor-fundo-hover, #e0e0e0);
+    transform: scale(1.05);
+}
+
+.botao:active,
+.botaoSelecionado:active {
+    background-color: var(--cor-fundo-active, #d0d0d0);
+    transform: scale(0.95);
+}
